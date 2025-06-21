@@ -311,7 +311,7 @@ classes: .hero, .hero_cta, hero_cta_text  */
 }
 
 /* Section - About Us:
-class: .about_us, .section_title, .benefits, .benefit,
+class: .about_us, .section_title, .about_us_text, .benefits, .benefit,
 .benefits_title, .benefit_text .benefit_svg_wrapper */
 
 .about_us {
@@ -325,6 +325,12 @@ class: .about_us, .section_title, .benefits, .benefit,
 
 .section_title {
   color: var(--Primary-PDark);
+}
+
+.about_us_text {
+  width: 27.1875rem;
+  color: var(--Neutral-N900);
+  text-align: center;
 }
 
 .benefits {
