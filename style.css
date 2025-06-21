@@ -365,6 +365,92 @@ class: .about_us, .section_title, .benefits, .benefit,
   flex-shrink: 0;
 }
 
+/* Workshop Preview:
+classes:.workshop_preview, .small_section_title, .preview_cards,
+.preview_card, .preview_right_container, .preview_text, .preview_title,
+.preview_price, .preview_description, .preview_button, .preview_button_text */
+
+.workshop_preview {
+  display: flex;
+  padding: 4.6875rem 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.6875rem;
+  align-self: stretch;
+  background: var(--Neutral-N100);
+}
+
+.small_section_title {
+  color: var(--Primary-PAccent);
+  text-align: center;
+}
+
+.preview_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.preview_card {
+  display: flex;
+  width: 75rem;
+  height: 22.5rem;
+  min-height: 22.5rem;
+  align-items: flex-start;
+  border-radius: 0.25rem;
+
+  /* dropshadow */
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+}
+
+.preview_right_container {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+  background: var(--Supplementing-Colors-Supplementing-1);
+}
+
+.preview_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.preview_title {
+  color: var(--Supplementing-Colors-Supplementing-3);
+}
+
+.preview_price {
+  color: var(--Supplementing-Colors-Supplementing-3);
+}
+
+.preview_description {
+  max-width: 22.5rem;
+  color: var(--Supplementing-Colors-Supplementing-3);
+}
+
+.preview_button {
+  display: flex;
+  padding: 0.625rem 1.25rem;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  background: var(--Secondary-SAccent);
+
+  /* dropshadow */
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+}
+
+.preview_button_text {
+  color: var(--Supplementing-Colors-Supplementing-1);
+}
+
 /* FOOTER
 html-elements: footer
 classes: .footer_column-left, .footer_column, .footer_title, .footer_links,
