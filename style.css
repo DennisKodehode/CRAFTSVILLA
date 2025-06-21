@@ -552,3 +552,31 @@ classes: .gallery_hero, .section_title, .gallery_hero_container,
   height: 6.25rem;
   aspect-ratio: 101/100;
 }
+
+/* Section Gallery:
+classes: .gallery, .gallery_title, .gallery_container */
+
+.gallery {
+  display: flex;
+  padding: 4.6875rem 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem;
+  align-self: stretch;
+  background: var(--Supplementing-Colors-Supplementing-1);
+}
+
+.gallery_title {
+  color: var(--Primary-PAccent);
+  text-align: center;
+}
+
+.gallery_container {
+  display: flex;
+  width: 75.5rem;
+  padding: 0rem 0.125rem;
+  align-items: center;
+  align-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
