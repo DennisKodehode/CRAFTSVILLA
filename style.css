@@ -23,6 +23,42 @@
   padding: 0;
 }
 
+/* --- Button Reset --------------------------------------------------------- */
+button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+  /* remove default appearance */
+  appearance: none;
+  -webkit-appearance: none;
+
+  /* box-model & inherited typography */
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: none;
+
+  font: inherit; /* inherit family, size, weight, line-height */
+  color: inherit; /* inherit text color */
+
+  /* optional: remove blue iOS button text */
+  text-decoration: none;
+
+  /* keep pointer cursor for non-disabled buttons */
+  cursor: pointer;
+
+  /* outline only on keyboard focus (not mouse-click) if you use :focus-visible*/
+  outline: none; /* you’ll add your own focus style later */
+}
+
+button:disabled,
+[type="button"]:disabled,
+[type="submit"]:disabled,
+[type="reset"]:disabled {
+  cursor: default;
+  opacity: 0.6; /* visibly disabled */
+}
+
 body {
   width: 100dvw;
 }
@@ -37,6 +73,10 @@ h1 {
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  /* styling */
+  color: var(--Neutral-N100);
+  text-align: center;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 h2 {
@@ -233,6 +273,34 @@ header {
 }
 
 /* MAIN */
+
+/* Hero:
+classes: .hero, .hero_cta, hero_cta_text  */
+.hero {
+  display: flex;
+  padding: 13.1875rem 4.875rem 10rem 4.8125rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3.3125rem;
+  align-self: stretch;
+  background: url(./img/Hero.png) lightgray 50% / cover no-repeat;
+}
+
+.hero_cta {
+  display: flex;
+  padding: 0.625rem 1.25rem;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  background: var(--Primary-PAccent);
+  /* dropshadow */
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+}
+
+.hero_cta_text {
+  color: var(--Neutral-N200);
+}
 
 /* FOOTER
 html-elements: footer
