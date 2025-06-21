@@ -1,0 +1,192 @@
+:root {
+  --Primary-PAccent: #8e7cc3;
+  --Primary-PLight: #d1c4e9;
+  --Primary-PAccent: #8e7cc3;
+  --Secondary-SAccent: #ff8a65;
+  --Secondary-SLight: #ffccbc;
+  --Secondary-SDark: #d84315;
+  --Supplementing-Colors-Supplementing-1: #ede7f6;
+  --Supplementing-Colors-Supplementing-2: #a5d6a7;
+  --Supplementing-Colors-Supplementing-3: #333;
+  --Supplementing-Colors-Supplementing-4: #f1fbf5;
+  --Supplementing-Colors-Supplementing-5: #ddf5e5;
+  --Neutral-N100: #fff;
+  --Neutral-N200: #f0f0f0;
+  --Neutral-N500: #a0a0a0;
+  --Neutral-N600: #7a7a7a;
+  --Neutral-N900: #1f1f1f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100dvw;
+}
+
+/*TYPOGRAPHY*/
+
+/* Headers */
+h1 {
+  /* Header/H1 */
+  font-family: "Poppins", sans-serif;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+h2 {
+  /* Header/H2 */
+  font-family: "Poppins", sans-serif;
+  font-size: 2.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 3.59375rem */
+}
+
+h3 {
+  /* Header/H3 */
+  font-family: "Poppins", sans-serif;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 2.8125rem */
+}
+
+h4 {
+  /* Header/H4 */
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 2.5rem */
+}
+
+h5 {
+  /* Header/H5 */
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 1.4625rem */
+}
+
+h6 {
+  /* Header/H6 */
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 1.3rem */
+}
+
+/* Paragraphs */
+
+p {
+  /* Global p font */
+  font-family: "Source Sans 3", sans-serif;
+}
+
+/* P1 */
+.p1r {
+  /* Paragraph/P1/P1-R */
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.8rem */
+}
+
+.p1b {
+  /* Paragraph/P1/P1-B */
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 1.8rem */
+}
+
+/* P2 */
+.p2r {
+  /* Paragraph/P2/P2-R */
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.6rem */
+}
+
+.p2b {
+  /* Paragraph/P2/P2-B */
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 1.6rem */
+}
+
+/* P3 */
+.p3r {
+  /* Paragraph/P3/P3-R */
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.3125rem */
+}
+
+.p3b {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.3125rem */
+}
+
+/* P4 */
+.p4r {
+  /* Paragraph/P4/P4-R */
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.125rem */
+}
+
+.p4b {
+  /* Paragraph/P4/P4-B */
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.125rem */
+}
+
+/* BUTTON TEXT */
+
+/* button large */
+.bl {
+  /* Button/B-L */
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 1.35rem */
+  letter-spacing: 0.01125rem;
+}
+
+/* button medium */
+.bm {
+  /* Button/B-M */
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 1.2rem */
+}
+
+/* button small */
+.bs {
+  /* Button/B-S */
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 1.05rem */
+  letter-spacing: 0.00875rem;
+}
