@@ -1,7 +1,7 @@
 :root {
   --Primary-PAccent: #8e7cc3;
   --Primary-PLight: #d1c4e9;
-  --Primary-PAccent: #8e7cc3;
+  --Primary-PDark: #5e548e;
   --Secondary-SAccent: #ff8a65;
   --Secondary-SLight: #ffccbc;
   --Secondary-SDark: #d84315;
@@ -190,3 +190,46 @@ p {
   line-height: 120%; /* 1.05rem */
   letter-spacing: 0.00875rem;
 }
+
+/* LINKS RESET */
+a:link,
+a:active,
+a:hover,
+a:visited {
+  color: var(--Primary-PDark);
+  text-decoration: none;
+
+  /* Button/B-L */
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 1.35rem */
+  letter-spacing: 0.01125rem;
+}
+
+/* HEADER:
+html-elements: header
+classes: .logo, .nav_links, .nav_link*/
+
+header {
+  display: flex;
+  height: 4.625rem;
+  padding: 0.625rem 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  background: var(--Primary-PLight);
+}
+
+.logo {
+  aspect-ratio: 200/33;
+}
+
+.nav_links {
+  display: flex;
+  padding: 0.625rem;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+/* MAIN */
