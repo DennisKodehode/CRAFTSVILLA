@@ -60,7 +60,7 @@ button:disabled,
 }
 
 body {
-  width: 100dvw;
+  width: 100%;
   background: var(--Neutral-N100);
 }
 
