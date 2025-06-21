@@ -220,7 +220,7 @@ header {
   align-self: stretch;
   background: var(--Primary-PLight);
 }
-
+/* FOR FOOTER AND HEADER */
 .logo {
   aspect-ratio: 200/33;
 }
@@ -233,3 +233,47 @@ header {
 }
 
 /* MAIN */
+
+/* FOOTER
+html-elements: footer
+classes: .footer_column-left, .footer_column, .footer_title, .footer_links,
+ .footer_link, .footer_link_mail */
+
+footer {
+  display: flex;
+  padding: 4.6875rem 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+  background: var(--Primary-PLight);
+}
+
+.footer_column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.footer_column {
+  display: flex;
+  padding-top: 4.18188rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex: 1 0 0;
+}
+
+.footer_title {
+  color: var(--Supplementing-Colors-Supplementing-3);
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
