@@ -61,6 +61,7 @@ button:disabled,
 
 body {
   width: 100dvw;
+  background: var(--Neutral-N100);
 }
 
 /*TYPOGRAPHY*/
@@ -273,6 +274,13 @@ header {
 }
 
 /* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.6875rem;
+  align-self: stretch;
+}
 
 /* Hero:
 classes: .hero, .hero_cta, hero_cta_text  */
@@ -300,6 +308,61 @@ classes: .hero, .hero_cta, hero_cta_text  */
 
 .hero_cta_text {
   color: var(--Neutral-N200);
+}
+
+/* Section - About Us:
+class: .about_us, .section_title, .benefits, .benefit,
+.benefits_title, .benefit_text .benefit_svg_wrapper */
+
+.about_us {
+  display: flex;
+  padding-bottom: 4.6875rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+.section_title {
+  color: var(--Primary-PDark);
+}
+
+.benefits {
+  display: flex;
+  height: 16.0625rem;
+  padding: 1.5rem 0rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  align-self: stretch;
+  border-radius: 0.25rem;
+  background: var(--Supplementing-Colors-Supplementing-1);
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.benefits_title {
+  color: var(--Neutral-N900);
+  text-align: center;
+  max-width: 10rem;
+  align-self: stretch;
+}
+
+.benefit_text {
+  color: var(--Neutral-N900);
+  text-align: center;
+  width: 11.25rem;
+}
+
+.benefit_svg_wrapper {
+  width: 4.84725rem;
+  height: 4.40931rem;
+  flex-shrink: 0;
 }
 
 /* FOOTER
