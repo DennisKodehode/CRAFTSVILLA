@@ -778,8 +778,9 @@ textarea {
 .feedback_area {
   display: flex;
   padding: 0rem 0.125rem;
+  justify-content: space-around;
   align-items: center;
-  gap: 5.5rem;
+  align-self: stretch;
 }
 
 .feedback_form {
