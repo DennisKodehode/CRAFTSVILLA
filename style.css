@@ -561,7 +561,6 @@ classes: .gallery_hero, .section_title, .gallery_hero_container,
 
 .gallery_hero {
   display: flex;
-  height: 61.9375rem;
   padding-top: 4.6875rem;
   flex-direction: column;
   align-items: center;
@@ -979,6 +978,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  align-self: stretch;
+  background: var(--Neutral-N100);
+}
+
+.divider {
+  height: 10rem;
   align-self: stretch;
   background: var(--Neutral-N100);
 }
