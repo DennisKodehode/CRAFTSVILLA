@@ -314,6 +314,33 @@ header {
   background: var(--Primary-PLight);
 }
 
+nav a,
+footer a {
+  position: relative;
+  color: var(--Primary-PDark);
+  text-decoration: none;
+  padding: 0.25rem 0;
+}
+
+nav a::after,
+footer a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 2px;
+  background-color: var(--Primary-PAccent);
+  transition: transform 0.3s ease;
+}
+
+nav a:hover::after,
+footer a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
 .nav_links {
   display: flex;
   padding: 0.625rem;
@@ -340,7 +367,7 @@ classes: .hero, .hero_cta, hero_cta_text  */
   align-items: center;
   gap: 3.3125rem;
   align-self: stretch;
-  background: url(./img/Hero.png) lightgray 50% / cover no-repeat;
+  background: url(./img/Hero.png) var(--Primary-PAccent) 50% / cover no-repeat;
 }
 
 .hero_cta {
@@ -352,6 +379,12 @@ classes: .hero, .hero_cta, hero_cta_text  */
   background: var(--Primary-PAccent);
   /* dropshadow */
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+}
+
+.hero_cta:hover {
+  background-color: var(--Primary-PDark);
+  transform: scale(1.05);
+  transition: all 0.2s ease;
 }
 
 .hero_cta_text {
@@ -398,6 +431,16 @@ class: .about_us, .section_title, .about_us_text, .benefits, .benefit,
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+}
+
+.benefit:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.benefit > img:hover {
+  transform: scale(1.1) rotate(2deg);
+  transition: transform 0.3s ease;
 }
 
 .benefits_title {
@@ -453,9 +496,15 @@ classes:.workshop_preview, .small_section_title, .preview_cards,
   min-height: 22.5rem;
   align-items: flex-start;
   border-radius: 0.25rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   /* dropshadow */
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+}
+
+.preview_card:hover {
+  transform: translateY(-40px) scale(1.06);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
 .preview_right_container {
@@ -575,6 +624,11 @@ classes: .gallery_hero, .section_title, .gallery_hero_container,
   max-width: 1666px;
 }
 
+.gallery_hero_container > img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
 .arrow_link {
   display: flex;
   width: 28.5rem;
@@ -624,6 +678,18 @@ classes: .gallery, .gallery_title, .gallery_container */
   flex-wrap: wrap;
 }
 
+.gallery_container > img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery_container > img:hover {
+  filter: brightness(1.1);
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
 /* FEEDBACK */
 
 .feedback_main {
@@ -671,6 +737,12 @@ class: .testimonial, .section_title, .testimonials, .testimonial_card,
   border-radius: 0.25rem;
   border: 1px solid #e5e5e5;
   background: var(--Supplementing-Colors-Supplementing-1);
+}
+
+.testimonial_card:hover {
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
 }
 
 .testimonial_heading {
@@ -833,6 +905,12 @@ textarea {
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
 }
 
+.submit_button:hover {
+  background-color: var(--Primary-PDark);
+  transform: scale(1.03);
+  transition: 0.2s ease;
+}
+
 .bs_text {
   color: var(--Neutral-N200);
 }
@@ -878,6 +956,7 @@ classes: .booking_options, .booking_title_wrapper, .booking_title,
 }
 
 .booking_card {
+  outline: 0px none var(--Primary-PLight);
   display: flex;
   padding: 1.5rem;
   flex-direction: column;
@@ -888,6 +967,12 @@ classes: .booking_options, .booking_title_wrapper, .booking_title,
 
   /* dropshadow */
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+}
+
+.booking_card:hover {
+  outline: 4px solid var(--Primary-PLight);
+  transform: translateY(-8px);
+  transition: all 0.3s ease-in-out;
 }
 
 .booking_card_title_wrapper {
@@ -976,6 +1061,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   gap: 2rem;
   align-self: stretch;
   background: var(--Neutral-N100);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 2px solid var(--Primary-PAccent);
+  background-color: var(--Supplementing-Colors-Supplementing-5);
 }
 
 /* FIXES */
