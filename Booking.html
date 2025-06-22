@@ -55,7 +55,7 @@
             />
             <h4 class="booking_card_price">400 kr</h4>
             <div class="booking_button_wrapper">
-              <a href="#">
+              <a href="#booking_area">
                 <button class="booking_button">
                   <p class="bs booking_button_text">Velg tid</p>
                 </button>
@@ -73,7 +73,7 @@
             />
             <h4 class="booking_card_price">200 kr</h4>
             <div class="booking_button_wrapper">
-              <a href="#">
+              <a href="#booking_area">
                 <button class="booking_button">
                   <p class="bs booking_button_text">Velg tid</p>
                 </button>
@@ -91,13 +91,79 @@
             />
             <h4 class="booking_card_price">300 kr</h4>
             <div class="booking_button_wrapper">
-              <a href="#">
+              <a href="#booking_area">
                 <button class="booking_button">
                   <p class="bs booking_button_text">Velg tid</p>
                 </button>
               </a>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="booking">
+        <h2 class="section_title">Planlegg din kreative opplevelse</h2>
+        <div class="booking_area" id="booking_area">
+          <img src="./img/Booking/illustration_left.svg" alt="" />
+          <form action="" class="feedback_form">
+            <!-- Name -->
+            <div class="input_group">
+              <label for="name" class="p2b"></label>Navn<input
+                id="name"
+                name="name"
+                placeholder="Navn Etternavn"
+                required
+                type="text"
+              />
+            </div>
+            <!-- Workshop -->
+            <div class="input_group">
+              <label for="workshop" class="p2b">Workshop deltatt på</label
+              ><select id="workshop" name="workshop" required>
+                <option value="" disabled selected hidden>
+                  Velg en workshop
+                </option>
+                <option value="mosaic">Mosaikk kunst</option>
+                <option value="canvas">Lerretsmaling</option>
+                <option value="watercolor">Akvarellmaling</option>
+              </select>
+            </div>
+            <!-- Date -->
+            <div class="input_group">
+              <label for="date" class="p2b">Dato</label
+              ><input id="date" name="date" required type="date" />
+            </div>
+            <!-- Participants -->
+            <div class="input_group">
+              <label for="participants" class="p2b">Antall deltakere</label>
+              <select name="participants" id="participants" required>
+                <option value="" disabled selected hidden>
+                  Velg antall deltakere
+                </option>
+                <option value="solo">1</option>
+                <option value="pair">2</option>
+                <option value="family">3 til 5</option>
+                <option value="group">6 til 10</option>
+                <option value="team">11 til 20</option>
+              </select>
+            </div>
+            <!-- Wishes -->
+            <div class="input_group">
+              <label for="wishes" class="p2b">Spesielle ønsker</label
+              ><textarea
+                name="wishes"
+                id="wishes"
+                placeholder="Er det noe vi bør vite?"
+                rows="6"
+              ></textarea>
+            </div>
+            <!-- Button -->
+            <a href="">
+              <button class="submit_button" type="submit">
+                <p class="bs bs_text">Send inn</p>
+              </button>
+            </a>
+          </form>
+          <img src="./img/Booking/illustration_right.svg" alt="" />
         </div>
       </section>
     </main>
