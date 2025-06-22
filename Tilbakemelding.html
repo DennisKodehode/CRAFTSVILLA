@@ -155,7 +155,7 @@
         <div class="arrow_link">
           <h3 class="cts">Vi vil gjerne høre fra deg!</h3>
           <div class="arrow_svg_wrapper">
-            <a href="#">
+            <a href="#feedback">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="102"
@@ -174,6 +174,76 @@
               </svg>
             </a>
           </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="feedback_title_wrapper">
+          <h3 class="feedback_title">Del gjerne opplevelsen din med oss!</h3>
+          <p class="p1b feedback_subtitle">
+            Tilbakemeldingene dine hjelper oss med å gjøre workshopene våre
+            bedre for alle.
+          </p>
+        </div>
+        <div id="feedback" class="feedback_area">
+          <!-- Illustration Left -->
+          <img src="./img/Testimonials/illustration_relaxed.svg" alt="" />
+          <form class="feedback_form" action="#" method="post">
+            <!-- Name -->
+            <div class="input_group">
+              <label for="name" class="p2b">Navn</label
+              ><input
+                id="name"
+                name="name"
+                placeholder="Navn Etternavn"
+                required
+                type="text"
+              />
+            </div>
+            <!-- Workshop -->
+            <div class="input_group">
+              <label for="workshop" class="p2b">Workshop deltatt på</label
+              ><select id="workshop" name="workshop" required>
+                <option value="" disabled selected hidden>
+                  Velg en workshop
+                </option>
+                <option value="mosaic">Mosaikk kunst</option>
+                <option value="canvas">Lerretsmaling</option>
+                <option value="watercolor">Akvarellmaling</option>
+              </select>
+            </div>
+            <!-- Message -->
+            <div class="input_group">
+              <label for="message" class="p2b">Tilbakemelding</label
+              ><textarea
+                id="message"
+                name="message"
+                placeholder="Beskriv din opplevelse..."
+                rows="6"
+                required
+              ></textarea>
+            </div>
+            <!-- Checkbox -->
+            <div class="consent_checkbox">
+              <input
+                type="checkbox"
+                id="consent"
+                name="consent"
+                required
+                class="checkbox"
+              /><label for="consent" class="checkbox_label p4r"
+                >Jeg gir CRAFTSVILLA tillatelse til å dele tilbakemeldingene
+                mine på nettstedet deres eller sosiale medier.</label
+              >
+            </div>
+            <!-- Button -->
+            <a href="#">
+              <button class="submit_button" type="submit">
+                <p class="bs bs_text">Send inn</p>
+              </button>
+            </a>
+          </form>
+          <!-- Illustration Right -->
+          <img src="./img/Testimonials/illustration_canvas.svg" alt="" />
         </div>
       </section>
     </main>

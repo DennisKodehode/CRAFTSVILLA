@@ -27,6 +27,54 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  width: 100%;
+  background: var(--Neutral-N100);
+}
+
+/* ───── FORM ELEMENT RESET ──────────────────────────────────────────── */
+
+/* Textual inputs, selects & textarea */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="password"],
+input[type="search"],
+select,
+textarea {
+  /* remove native look */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  /* neutral box model */
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: none;
+
+  /* make them blend with your typography */
+  font: inherit;
+  color: inherit;
+  line-height: inherit;
+
+  /* optional UX tweaks */
+  outline: none; /* you’ll add your own focus style later */
+  resize: none; /* let CSS decide if/when to resize textarea */
+  box-shadow: none; /* Safari/iOS inner shadow */
+}
+
+/* Hide IE/Edge ❌ arrow in <select> & Chrome spin-buttons on number input */
+select::-ms-expand {
+  display: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* --- Button Reset --------------------------------------------------------- */
 button,
 [type="button"],
@@ -61,11 +109,6 @@ button:disabled,
 [type="reset"]:disabled {
   cursor: default;
   opacity: 0.6; /* visibly disabled */
-}
-
-body {
-  width: 100%;
-  background: var(--Neutral-N100);
 }
 
 /*TYPOGRAPHY*/
@@ -648,4 +691,145 @@ class: .testimonial, .section_title, .testimonials, .testimonial_card,
 .testimonial_text {
   align-self: stretch;
   color: var(--Neutral-N900);
+}
+
+/* Feedback Form:
+html: label, input[type="text"], select, option, textarea
+classes: .feedback, .feedback_title_wrapper, .feedback_title,
+.feedback_subtitle, .feedback_area,
+.feedback_form, .input_group,
+.consent_checkbox, .checkbox, .checkbox_label, .submit_button, .bs_text */
+
+label {
+  color: var(--Neutral-N900);
+  text-align: center;
+}
+
+input[type="text"],
+select {
+  display: flex;
+  height: 2.25rem;
+  padding: 0rem 0.625rem;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+  border-radius: 0.25rem;
+  border: 1px solid var(--Neutral-N500);
+  background: var(--Neutral-N100);
+}
+
+select {
+  /* 👇 Adds a custom dropdown arrow */
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='12' viewBox='0 0 20 20' width='12' xmlns='http://www.w3.org/2000/svg'><path d='M5.516 7.548l4.482 4.48 4.486-4.48A.997.997 0 0013.485 6H6.516a.998.998 0 00-.707 1.548z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+  color: var(--Supplementing-Colors-Supplementing-3);
+}
+
+/* 2) While the select is still “invalid” (i.e. placeholder shown) */
+select:invalid {
+  color: rgba(0, 0, 0, 0.5); /* same opacity as your input placeholder */
+}
+
+option {
+  color: var(--Supplementing-Colors-Supplementing-3);
+}
+
+textarea {
+  display: flex;
+  height: 8.75rem;
+  padding: 0.25rem 0.625rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  align-self: stretch;
+  border-radius: 0.25rem;
+  border: 1px solid var(--Neutral-N500);
+  background: var(--Neutral-N100);
+}
+
+.feedback {
+  display: flex;
+  padding: 2.5rem 1.5rem 4.6875rem 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  align-self: stretch;
+  background: var(--Supplementing-Colors-Supplementing-5);
+}
+
+.feedback_title_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.feedback_title {
+  color: var(--Primary-PAccent);
+  text-align: center;
+}
+
+.feedback_subtitle {
+  color: var(--Primary-PAccent);
+  text-align: center;
+}
+
+.feedback_area {
+  display: flex;
+  padding: 0rem 0.125rem;
+  align-items: center;
+  gap: 5.5rem;
+}
+
+.feedback_form {
+  display: flex;
+  width: 26.25rem;
+  padding: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  border-radius: 0.75rem;
+  background: var(--Supplementing-Colors-Supplementing-4);
+
+  /* dropshadow */
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+}
+
+.input_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.625rem;
+  align-self: stretch;
+}
+
+.consent_checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+}
+
+.checkbox_label {
+  flex: 1 0 0;
+  color: var(--Neutral-N900);
+  text-align: left;
+}
+
+.submit_button {
+  display: flex;
+  padding: 0.625rem 1.25rem;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  background: var(--Primary-PAccent);
+
+  /* dropshadow */
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+}
+
+.bs_text {
+  color: var(--Neutral-N200);
 }
