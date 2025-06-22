@@ -982,6 +982,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: var(--Neutral-N100);
 }
 
+/* FIXES */
+
 .divider {
   height: 10rem;
   align-self: stretch;
