@@ -289,7 +289,6 @@ a:link,
 a:active,
 a:hover,
 a:visited {
-  color: var(--Primary-PDark);
   text-decoration: none;
 
   /* Button/B-L */
@@ -346,6 +345,10 @@ footer a:hover::after {
   padding: 0.625rem;
   align-items: flex-start;
   gap: 1.5rem;
+}
+
+.active {
+  color: var(--Primary-PAccent);
 }
 
 /* MAIN */
